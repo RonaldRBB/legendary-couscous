@@ -15,11 +15,7 @@ class TitleBar extends React.Component {
                     <div className="level-right">
                         <div className="level-item">
                             <div className="buttons is-right">
-                                <a
-                                    href="https://github.com/vikdiesel/admin-one-bulma-dashboard"
-                                    target="_blank"
-                                    className="button is-primary"
-                                >
+                                <a href="https://github.com/vikdiesel/admin-one-bulma-dashboard" target="_blank" className="button is-primary">
                                     <span className="icon">
                                         <i className="mdi mdi-github-circle" />
                                     </span>

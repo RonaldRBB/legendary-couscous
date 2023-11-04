@@ -7,7 +7,7 @@ class Hero extends React.Component {
                     <div className="level">
                         <div className="level-left">
                             <div className="level-item">
-                                <h1 className="title">Dashboard</h1>
+                                <h1 className="title">Dashboarsssd</h1>
                             </div>
                         </div>
                         <div className="level-right" style={{ display: "none" }}>
