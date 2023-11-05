@@ -1,10 +1,4 @@
 import React from 'react';
-import ExamplesTable from './examples_table';
-import ExamplesForms from './examples_forms';
-import ExamplesProfile from './examples_profile';
-import ExamplesSubmenus from './examples_submenus';
-import AboutGithub from './about_github';
-import AboutAbout from './about_about';
 import Li from './li';
 class Aside extends React.Component {
     list() {
@@ -52,41 +46,18 @@ class Aside extends React.Component {
                     </div>
                 </div>
                 <div className="menu is-menu-main">
-                    <p className="menu-label">General</p>
-                    <ul className="menu-list">
-                        {this.list().general.map((item, index) =>
-                            <Li key={index}
-                                name={item.name}
-                                icon={item.icon}
-                                link={item.link}
-                            />)}
-                    </ul>
-                    <p className="menu-label">Examples</p>
-                    <ul className="menu-list">
-                        {this.list().examples.map((item, index) =>
-                            <Li key={index}
-                                name={item.name}
-                                icon={item.icon}
-                                link={item.link}
-                            />
-                        )}
-                        <ExamplesTable />
-                        <ExamplesForms />
-                        <ExamplesProfile />
-                        <ExamplesSubmenus />
-                    </ul>
-                    <p className="menu-label">About</p>
-                    <ul className="menu-list">
-                        {this.list().about.map((item, index) =>
-                            <Li key={index}
-                                name={item.name}
-                                icon={item.icon}
-                                link={item.link}
-                            />
-                        )}
-                        <AboutGithub />
-                        <AboutAbout />
-                    </ul>
+                    {
+                        Object.keys(this.list()).map(category =>
+                            <>
+                                <p className="menu-label">{category}</p>
+                                <ul className="menu-list">
+                                    {this.list()[category].map(item =>
+                                        <Li name={item.name} icon={item.icon} link={item.link} />
+                                    )}
+                                </ul>
+                            </>
+                        )
+                    }
                 </div>
             </aside >
         );

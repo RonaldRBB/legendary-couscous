@@ -3,7 +3,7 @@ class Li extends React.Component {
     render() {
         return (
             <li>
-                <a href={this.props.link} className="is-active router-link-active has-icon">
+                <a href={this.props.link} className="router-link-active has-icon">
                     <span className="icon">
                         <i className={this.props.icon} />
                     </span>
