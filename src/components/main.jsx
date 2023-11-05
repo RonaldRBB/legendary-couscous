@@ -2,8 +2,8 @@ import React from 'react';
 import TileClients from './tile_clients';
 import TileSales from './tile_sales';
 import TilePerformance from './tile_performance';
-import CardPerformance from './card_performance';
-import CardClients from './card_clients';
+import CardPerformance from './card/performance';
+import Clients from './card/clients';
 class Main extends React.Component {
     render() {
         return (
@@ -14,7 +14,7 @@ class Main extends React.Component {
                     <TilePerformance />
                 </div>
                 <CardPerformance />
-                <CardClients />
+                <Clients />
             </section>
         );
     }

@@ -21,8 +21,7 @@ class Aside extends React.Component {
                 name: 'Profile',
                 icon: 'mdi mdi-account-circle',
                 link: 'profile.html',
-            }
-            ],
+            }],
             about: [{
                 name: 'About',
                 icon: 'mdi mdi-help-circle',
@@ -48,14 +47,14 @@ class Aside extends React.Component {
                 <div className="menu is-menu-main">
                     {
                         Object.keys(this.list()).map(category =>
-                            <>
+                            <div key={category}>
                                 <p className="menu-label">{category}</p>
                                 <ul className="menu-list">
                                     {this.list()[category].map(item =>
-                                        <Li name={item.name} icon={item.icon} link={item.link} />
+                                        <Li key={item.name} name={item.name} icon={item.icon} link={item.link} />
                                     )}
                                 </ul>
-                            </>
+                            </div>
                         )
                     }
                 </div>
