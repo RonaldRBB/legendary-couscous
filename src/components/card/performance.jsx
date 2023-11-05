@@ -1,21 +1,10 @@
 import React from 'react';
+import Header from './header';
 class CardPerformance extends React.Component {
     render() {
         return (
             <div className="card">
-                <header className="card-header">
-                    <p className="card-header-title">
-                        <span className="icon">
-                            <i className="mdi mdi-finance" />
-                        </span>
-                        Performance
-                    </p>
-                    <a href="#" className="card-header-icon">
-                        <span className="icon">
-                            <i className="mdi mdi-reload" />
-                        </span>
-                    </a>
-                </header>
+                <Header name="Performance" link="#" />
                 <div className="card-content">
                     <div className="chart-area">
                         <div style={{ height: "100%" }}>
