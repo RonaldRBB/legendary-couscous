@@ -1,5 +1,4 @@
 import React from 'react';
-// import UserData from '../components/users';
 import Navbar from '../components/navbar';
 import Aside from '../components/aside';
 import TitleBar from '../components/title_bar';
@@ -16,7 +15,6 @@ function App() {
                 <TitleBar />
                 <Hero />
                 <Main />
-                {/* <UserData /> */}
                 <Footer />
             </div>
             <Modal />
