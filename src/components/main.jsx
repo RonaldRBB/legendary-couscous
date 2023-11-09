@@ -6,22 +6,28 @@ class Main extends React.Component {
     tilesList() {
         return [
             {
-                title: "Clients",
-                icon: "mdi mdi-account-multiple",
-                color: "has-text-primary",
-                value: "512"
+                title: "Heart Rate",
+                icon: "mdi mdi-heart-pulse",
+                color: "has-text-danger",
+                value: "76 bpm"
             },
             {
-                title: "Sales",
-                icon: "mdi mdi-cart-outline",
+                title: "Calories",
+                icon: "mdi mdi-fire",
+                color: "has-text-warning",
+                value: "2200 kCal"
+            },
+            {
+                title: "Weight",
+                icon: "mdi mdi-scale-bathroom",
                 color: "has-text-info",
-                value: "$7,770"
+                value: "21.1 kg"
             },
             {
-                title: "Performance",
-                icon: "mdi mdi-finance",
+                title: "BMI",
+                icon: "mdi mdi-weight",
                 color: "has-text-success",
-                value: "256%"
+                value: "21.1"
             }
         ]
     }
